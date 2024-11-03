@@ -48,3 +48,4 @@ function placeOrder() {
 if (document.getElementById('cart')) {
     displayCart();
 }
+
