@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #f8f9fa;
+    background-color: #a76214;
     padding: 20px;
 }
 
@@ -17,7 +17,7 @@ nav a {
 }
 
 .product {
-    border: 1px solid #ddd;
+    border: 1px solid #968109;
     padding: 10px;
     margin: 10px;
     display: inline-block;
