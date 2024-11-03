@@ -1,12 +1,57 @@
-<main>
-    <div id="cart"></div>
-    <button onclick="clearCart()">Clear Cart</button>
-</main>
-<script>
-    displayCart();
-    function clearCart() {
-        localStorage.removeItem('cart');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - AmoraHaven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #d2b48c; /* Cappuccino color */
+            color: #4e3b31; /* Mocha color for text */
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4e3b31; /* Mocha */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: #4e3b31; /* Mocha */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #3c2c24; /* Darker mocha for hover effect */
+        }
+        #cart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <main>
+        <div id="cart"></div>
+        <button onclick="clearCart()">Clear Cart</button>
+    </main>
+    <script>
         displayCart();
-        alert('Cart has been cleared.');
-    }
-</script> 
+        function clearCart() {
+            localStorage.removeItem('cart');
+            displayCart();
+            alert('Cart has been cleared.');
+        }
+    </script>
+</body>
+</html>
