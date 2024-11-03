@@ -1,0 +1,12 @@
+<main>
+    <div id="cart"></div>
+    <button onclick="clearCart()">Clear Cart</button>
+</main>
+<script>
+    displayCart();
+    function clearCart() {
+        localStorage.removeItem('cart');
+        displayCart();
+        alert('Cart has been cleared.');
+    }
+</script> 
