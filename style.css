@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif; /* Use a beautiful font */
-    background-image: url('background.jpeg'); /* Use a background image */
+    background-image: url('images/background.jpg'); /* Use a background image */
     background-size: cover;
     background-position: center;
     color: #4e3b31; /* Mocha color for text */
