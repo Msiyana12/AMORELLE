@@ -1,7 +1,9 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif; /* Use a beautiful font */
-    background-color: #d2b48c; /* Cappuccino color for background */
+    background-image: url('background.jpeg'); /* Use a background image */
+    background-size: cover;
+    background-position: center;
     color: #4e3b31; /* Mocha color for text */
     margin: 0;
     padding: 20px;
@@ -30,6 +32,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
+    text-decoration-style: wavy;
     color: white; /* White for nav links */
     font-weight: bold;
     font-size: 1.2em;
